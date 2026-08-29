@@ -1,0 +1,1718 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Aug 25 19:52:43 2026
+# Process ID: 9652
+# Current directory: C:/Users/User/Desktop/UCSD/interview/TetraMem/systolic_3x3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30932 C:\Users\User\Desktop\UCSD\interview\TetraMem\systolic_3x3\systolic_3x3.xpr
+# Log file: C:/Users/User/Desktop/UCSD/interview/TetraMem/systolic_3x3/vivado.log
+# Journal file: C:/Users/User/Desktop/UCSD/interview/TetraMem/systolic_3x3\vivado.jou
+# Running On: LAPTOP-QBFB0P9N, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 8417 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/User/Desktop/UCSD/interview/TetraMem/systolic_3x3/systolic_3x3.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24c/1.0/board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24i:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24i/1.0/board.xml as part xck24-ubva530-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.4/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.2/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.3/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.4/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kd240_som:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kd240_som/1.0/board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kr260_som/1.0/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kr260_som/1.1/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.4/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.0/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.1/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc702:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc702/1.4/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu104/1.1/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.4/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.5/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.6/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/User/Desktop/UCSD/interview/TetraMem/systolic_3x3/systolic_3x3.gen/sources_1'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/User/Desktop/UCSD/interview/TetraMem/source/rtl/fifo32.sv'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:13 . Memory (MB): peak = 1415.168 ; gain = 54.062
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_systolic_top'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/User/Desktop/UCSD/interview/TetraMem/systolic_3x3/systolic_3x3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_systolic_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/User/Desktop/UCSD/interview/TetraMem/systolic_3x3/systolic_3x3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_systolic_top_vlog.prj"
+ECHO is off.
+ECHO is off.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/User/Desktop/UCSD/interview/TetraMem/source/rtl/pe.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/User/Desktop/UCSD/interview/TetraMem/source/rtl/pe_array.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pe_array
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/User/Desktop/UCSD/interview/TetraMem/source/rtl/systolic_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module systolic_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/User/Desktop/UCSD/interview/TetraMem/source/rtl/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_systolic_top
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/User/Desktop/UCSD/interview/TetraMem/systolic_3x3/systolic_3x3.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_systolic_top_behav xil_defaultlib.tb_systolic_top xil_defaultlib.glbl -log elaborate.log"
+ECHO is off.
+ECHO is off.
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_systolic_top_behav xil_defaultlib.tb_systolic_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/User/Desktop/UCSD/interview/TetraMem/source/rtl/systolic_top.sv" Line 1. Module systolic_top_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Desktop/UCSD/interview/TetraMem/source/rtl/pe_array.sv" Line 1. Module pe_array(ROW_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Desktop/UCSD/interview/TetraMem/source/rtl/pe.sv" Line 1. Module pe_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Desktop/UCSD/interview/TetraMem/source/rtl/pe.sv" Line 1. Module pe_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Desktop/UCSD/interview/TetraMem/source/rtl/pe.sv" Line 1. Module pe_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Desktop/UCSD/interview/TetraMem/source/rtl/pe.sv" Line 1. Module pe_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Desktop/UCSD/interview/TetraMem/source/rtl/pe.sv" Line 1. Module pe_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Desktop/UCSD/interview/TetraMem/source/rtl/pe.sv" Line 1. Module pe_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Desktop/UCSD/interview/TetraMem/source/rtl/pe.sv" Line 1. Module pe_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Desktop/UCSD/interview/TetraMem/source/rtl/pe.sv" Line 1. Module pe_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Desktop/UCSD/interview/TetraMem/source/rtl/pe.sv" Line 1. Module pe_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Desktop/UCSD/interview/TetraMem/source/rtl/systolic_top.sv" Line 1. Module systolic_top_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Desktop/UCSD/interview/TetraMem/source/rtl/pe_array.sv" Line 1. Module pe_array(ROW_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Desktop/UCSD/interview/TetraMem/source/rtl/pe.sv" Line 1. Module pe_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Desktop/UCSD/interview/TetraMem/source/rtl/pe.sv" Line 1. Module pe_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Desktop/UCSD/interview/TetraMem/source/rtl/pe.sv" Line 1. Module pe_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Desktop/UCSD/interview/TetraMem/source/rtl/pe.sv" Line 1. Module pe_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Desktop/UCSD/interview/TetraMem/source/rtl/pe.sv" Line 1. Module pe_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Desktop/UCSD/interview/TetraMem/source/rtl/pe.sv" Line 1. Module pe_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Desktop/UCSD/interview/TetraMem/source/rtl/pe.sv" Line 1. Module pe_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Desktop/UCSD/interview/TetraMem/source/rtl/pe.sv" Line 1. Module pe_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Desktop/UCSD/interview/TetraMem/source/rtl/pe.sv" Line 1. Module pe_default doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pe_default
+Compiling module xil_defaultlib.pe_array(ROW_WIDTH=2)
+Compiling module xil_defaultlib.systolic_top_default
+Compiling module xil_defaultlib.tb_systolic_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_systolic_top_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2634.453 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/User/Desktop/UCSD/interview/TetraMem/systolic_3x3/systolic_3x3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_systolic_top_behav -key {Behavioral:sim_1:Functional:tb_systolic_top} -tclbatch {tb_systolic_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_systolic_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+[PROPERTY] Identity A x I = A: golden setup PASS
+[PROPERTY] Zero A x 0 = 0: golden setup PASS
+[PROPERTY] Non-Commutativity A x B != B x A: golden setup PASS
+[PROPERTY] Scalar Linearity (2A)xB = 2(AB): golden setup PASS
+PASS matrix 0
+
+===============================================================================================
+TESTCASE 0: Directed signed arithmetic
+ATTRIBUTE   : Verifies signed MAC arithmetic, negative operands, and bank handoff.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    2   -1    7 |  |    1    3   -2 |  |  -21   21  -15 |  |  -21   21  -15 |
+  |   -6    5   -4 |  |    2   -1    4 |  |   16  -31   36 |  |   16  -31   36 |
+  |    3   -2    1 |  |   -3    2   -1 |  |   -4   13  -15 |  |   -4   13  -15 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 1
+
+===============================================================================================
+TESTCASE 1: Directed signed arithmetic
+ATTRIBUTE   : Verifies signed MAC arithmetic, negative operands, and bank handoff.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    5   -2    0 |  |   -2   -1    4 |  |    4   -9   26 |  |    4   -9   26 |
+  |    6   -4    3 |  |   -7    2   -3 |  |   19  -38   57 |  |   19  -38   57 |
+  |   -1    7   -8 |  |    1   -8    7 |  |  -55   79  -81 |  |  -55   79  -81 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 2
+
+===============================================================================================
+TESTCASE 2: Continuous-stream random
+ATTRIBUTE   : Verifies bubble-free ready/valid streaming across matrix boundaries.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    6    4   -5 |  |    4    4    6 |  |   28   16   70 |  |   28   16   70 |
+  |   -6   -5    6 |  |    1   -2    6 |  |  -29  -14  -78 |  |  -29  -14  -78 |
+  |    5   -8   -1 |  |    0    0   -2 |  |   12   36  -16 |  |   12   36  -16 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 3
+
+===============================================================================================
+TESTCASE 3: Continuous-stream random
+ATTRIBUTE   : Verifies bubble-free ready/valid streaming across matrix boundaries.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    6   -2    4 |  |    4   -2   -3 |  |   56  -26  -56 |  |   56  -26  -56 |
+  |   -4    1   -7 |  |   -6   -5    5 |  |  -57   45   66 |  |  -57   45   66 |
+  |   -8    0    0 |  |    5   -6   -7 |  |  -32   16   24 |  |  -32   16   24 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 4
+
+===============================================================================================
+TESTCASE 4: Continuous-stream random
+ATTRIBUTE   : Verifies bubble-free ready/valid streaming across matrix boundaries.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -1   -2    3 |  |   -7   -1   -1 |  |  -15  -19    8 |  |  -15  -19    8 |
+  |   -8   -8    2 |  |    2    7   -5 |  |   28  -52   46 |  |   28  -52   46 |
+  |    6   -3    1 |  |   -6   -2   -1 |  |  -54  -29    8 |  |  -54  -29    8 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 5
+
+===============================================================================================
+TESTCASE 5: Continuous-stream random
+ATTRIBUTE   : Verifies bubble-free ready/valid streaming across matrix boundaries.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -7   -6    5 |  |    7    6   -5 |  |  -62  -52   63 |  |  -62  -52   63 |
+  |    6    3    5 |  |   -2    0   -8 |  |   11   26  -74 |  |   11   26  -74 |
+  |   -5    7   -5 |  |   -5   -2   -4 |  |  -24  -20  -11 |  |  -24  -20  -11 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 6
+
+===============================================================================================
+TESTCASE 6: Maximum result: (-8)x(-8)
+ATTRIBUTE   : Verifies the largest 3-term signed result: 3*(-8)*(-8) = +192.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -8   -8   -8 |  |   -8   -8   -8 |  |  192  192  192 |  |  192  192  192 |
+  |   -8   -8   -8 |  |   -8   -8   -8 |  |  192  192  192 |  |  192  192  192 |
+  |   -8   -8   -8 |  |   -8   -8   -8 |  |  192  192  192 |  |  192  192  192 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 7
+
+===============================================================================================
+TESTCASE 7: Minimum result: (-8)x(+7)
+ATTRIBUTE   : Verifies the smallest 3-term signed result: 3*(-8)*(+7) = -168.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -8   -8   -8 |  |    7    7    7 |  | -168 -168 -168 |  | -168 -168 -168 |
+  |   -8   -8   -8 |  |    7    7    7 |  | -168 -168 -168 |  | -168 -168 -168 |
+  |   -8   -8   -8 |  |    7    7    7 |  | -168 -168 -168 |  | -168 -168 -168 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 8
+
+===============================================================================================
+TESTCASE 8: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    7    7    5 |  |    6   -2    2 |  |   34  -32    8 |  |   34  -32    8 |
+  |   -6   -8   -6 |  |   -4    1   -3 |  |  -28   34   -6 |  |  -28   34   -6 |
+  |    3   -7    5 |  |    4   -5    3 |  |   66  -38   42 |  |   66  -38   42 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 9
+
+===============================================================================================
+TESTCASE 9: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -7    7    3 |  |   -8    2   -4 |  |   43  -41  -19 |  |   43  -41  -19 |
+  |    6    4   -1 |  |   -4   -3   -8 |  |  -69    2  -59 |  |  -69    2  -59 |
+  |   -6    4    2 |  |    5   -2    3 |  |   42  -28   -2 |  |   42  -28   -2 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 10
+
+===============================================================================================
+TESTCASE 10: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    6   -8   -5 |  |   -4   -5   -5 |  |   -7  -51  -46 |  |   -7  -51  -46 |
+  |   -2    7   -4 |  |    1    7    2 |  |   35   87   24 |  |   35   87   24 |
+  |    2    4    2 |  |   -5   -7    0 |  |  -14    4   -2 |  |  -14    4   -2 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 11
+
+===============================================================================================
+TESTCASE 11: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -4   -5   -3 |  |    4    0   -3 |  |   37   35   11 |  |   37   35   11 |
+  |    0    1   -7 |  |   -7   -4   -1 |  |   35   31  -15 |  |   35   31  -15 |
+  |   -7   -8    6 |  |   -6   -5    2 |  |   -8    2   41 |  |   -8    2   41 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 12
+
+===============================================================================================
+TESTCASE 12: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -6   -4   -6 |  |   -1    2    2 |  |   20  -36  -38 |  |   20  -36  -38 |
+  |    4    1    7 |  |    4    0   -4 |  |  -35   36   53 |  |  -35   36   53 |
+  |    2    0   -4 |  |   -5    4    7 |  |   18  -12  -24 |  |   18  -12  -24 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 13
+
+===============================================================================================
+TESTCASE 13: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    0    3    2 |  |   -2    0   -1 |  |   -4   -1   10 |  |   -4   -1   10 |
+  |   -8   -3    3 |  |    2   -5    0 |  |   -5   36   23 |  |   -5   36   23 |
+  |   -6    2    6 |  |   -5    7    5 |  |  -14   32   36 |  |  -14   32   36 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 14
+
+===============================================================================================
+TESTCASE 14: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    7    0    7 |  |    0   -6    6 |  |  -56  -63   84 |  |  -56  -63   84 |
+  |   -1    6   -7 |  |   -1    0   -2 |  |   50   27  -60 |  |   50   27  -60 |
+  |    6   -3   -8 |  |   -8   -3    6 |  |   67  -12   -6 |  |   67  -12   -6 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 15
+
+===============================================================================================
+TESTCASE 15: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -5   -2   -4 |  |   -1   -8    7 |  |    3   76   -7 |  |    3   76   -7 |
+  |   -2    6   -1 |  |    7   -4    2 |  |   47   -1    6 |  |   47   -1    6 |
+  |    3   -7   -7 |  |   -3   -7   -8 |  |  -31   53   63 |  |  -31   53   63 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 16
+
+===============================================================================================
+TESTCASE 16: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -5    5    6 |  |   -3    4   -2 |  |   43  -45  -16 |  |   43  -45  -16 |
+  |   -4   -5    6 |  |    2    1    2 |  |   20  -51  -38 |  |   20  -51  -38 |
+  |    0    4    4 |  |    3   -5   -6 |  |   20  -16  -16 |  |   20  -16  -16 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 17
+
+===============================================================================================
+TESTCASE 17: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -3   -3    0 |  |    4    1    2 |  |   -3   18  -24 |  |   -3   18  -24 |
+  |   -4    6   -1 |  |   -3   -7    6 |  |  -29  -48   25 |  |  -29  -48   25 |
+  |   -5    4    4 |  |   -5    2    3 |  |  -52  -25   26 |  |  -52  -25   26 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 18
+
+===============================================================================================
+TESTCASE 18: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -8   -2    2 |  |    0   -4    2 |  |   24   42  -12 |  |   24   42  -12 |
+  |   -1    2    7 |  |   -6   -3    4 |  |   30   12   48 |  |   30   12   48 |
+  |    0   -1    4 |  |    6    2    6 |  |   30   11   20 |  |   30   11   20 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 19
+
+===============================================================================================
+TESTCASE 19: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    7   -4    6 |  |    4    6    0 |  |   34   56   -4 |  |   34   56   -4 |
+  |   -4    4    3 |  |   -3   -8   -5 |  |  -31  -65  -32 |  |  -31  -65  -32 |
+  |   -7   -8   -8 |  |   -1   -3   -4 |  |    4   46   72 |  |    4   46   72 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 20
+
+===============================================================================================
+TESTCASE 20: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -8   -5   -2 |  |    1    1    3 |  |  -53   32  -43 |  |  -53   32  -43 |
+  |   -3    4   -8 |  |    7   -8    3 |  |  -15  -35  -13 |  |  -15  -35  -13 |
+  |   -4   -6   -3 |  |    5    0    2 |  |  -61   44  -36 |  |  -61   44  -36 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 21
+
+===============================================================================================
+TESTCASE 21: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    3    7   -6 |  |   -7   -3    4 |  |   -6   75  -44 |  |   -6   75  -44 |
+  |   -1   -2   -5 |  |   -3    6   -8 |  |   43   26   12 |  |   43   26   12 |
+  |   -5    5    1 |  |   -6   -7    0 |  |   14   38  -60 |  |   14   38  -60 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 22
+
+===============================================================================================
+TESTCASE 22: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    1   -5    5 |  |   -4    6   -4 |  |  -19   26    6 |  |  -19   26    6 |
+  |    7   -8   -4 |  |    6    2   -3 |  |  -88    2    0 |  |  -88    2    0 |
+  |   -2    3    5 |  |    3    6   -1 |  |   41   24   -6 |  |   41   24   -6 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 23
+
+===============================================================================================
+TESTCASE 23: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    3    3   -7 |  |    3    6   -8 |  |   53   15  -37 |  |   53   15  -37 |
+  |    5   -4    2 |  |   -4   -8    5 |  |   15   56  -52 |  |   15   56  -52 |
+  |    1    2    0 |  |   -8   -3    4 |  |   -5  -10    2 |  |   -5  -10    2 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 24
+
+===============================================================================================
+TESTCASE 24: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    2   -4   -2 |  |    1    4   -3 |  |    2  -14    0 |  |    2  -14    0 |
+  |   -7   -2    5 |  |    1    5   -3 |  |  -19  -33   42 |  |  -19  -33   42 |
+  |    2   -2    4 |  |   -2    1    3 |  |   -8    2   12 |  |   -8    2   12 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 25
+
+===============================================================================================
+TESTCASE 25: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -2    2    7 |  |    6   -4    6 |  |    5   38  -39 |  |    5   38  -39 |
+  |   -1   -4    1 |  |    5    1    4 |  |  -25    4  -27 |  |  -25    4  -27 |
+  |    7   -7    2 |  |    1    4   -5 |  |    9  -27    4 |  |    9  -27    4 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 26
+
+===============================================================================================
+TESTCASE 26: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -8   -4   -2 |  |   -6    1   -2 |  |   16   26  -16 |  |   16   26  -16 |
+  |   -4   -8    7 |  |    6   -8    6 |  |    4   53  -12 |  |    4   53  -12 |
+  |    7   -4   -4 |  |    4   -1    4 |  |  -82   43  -54 |  |  -82   43  -54 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 27
+
+===============================================================================================
+TESTCASE 27: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    6   -8    3 |  |    3    2    4 |  |   80   13   61 |  |   80   13   61 |
+  |    6   -8   -5 |  |   -7   -2   -5 |  |   64   53   69 |  |   64   53   69 |
+  |    3    4    0 |  |    2   -5   -1 |  |  -19   -2   -8 |  |  -19   -2   -8 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 28
+
+===============================================================================================
+TESTCASE 28: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    6    1   -2 |  |    3   -6    2 |  |   38  -45    2 |  |   38  -45    2 |
+  |   -7    5   -2 |  |    4   -5    4 |  |   15   13   -8 |  |   15   13   -8 |
+  |   -3   -8    3 |  |   -8    2    7 |  |  -65   64  -17 |  |  -65   64  -17 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_systolic_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 2634.453 ; gain = 0.000
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 5000ns
+[PROPERTY] Identity A x I = A: golden setup PASS
+[PROPERTY] Zero A x 0 = 0: golden setup PASS
+[PROPERTY] Non-Commutativity A x B != B x A: golden setup PASS
+[PROPERTY] Scalar Linearity (2A)xB = 2(AB): golden setup PASS
+PASS matrix 0
+
+===============================================================================================
+TESTCASE 0: Directed signed arithmetic
+ATTRIBUTE   : Verifies signed MAC arithmetic, negative operands, and bank handoff.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    2   -1    7 |  |    1    3   -2 |  |  -21   21  -15 |  |  -21   21  -15 |
+  |   -6    5   -4 |  |    2   -1    4 |  |   16  -31   36 |  |   16  -31   36 |
+  |    3   -2    1 |  |   -3    2   -1 |  |   -4   13  -15 |  |   -4   13  -15 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 1
+
+===============================================================================================
+TESTCASE 1: Directed signed arithmetic
+ATTRIBUTE   : Verifies signed MAC arithmetic, negative operands, and bank handoff.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    5   -2    0 |  |   -2   -1    4 |  |    4   -9   26 |  |    4   -9   26 |
+  |    6   -4    3 |  |   -7    2   -3 |  |   19  -38   57 |  |   19  -38   57 |
+  |   -1    7   -8 |  |    1   -8    7 |  |  -55   79  -81 |  |  -55   79  -81 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 2
+
+===============================================================================================
+TESTCASE 2: Continuous-stream random
+ATTRIBUTE   : Verifies bubble-free ready/valid streaming across matrix boundaries.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    6    4   -5 |  |    4    4    6 |  |   28   16   70 |  |   28   16   70 |
+  |   -6   -5    6 |  |    1   -2    6 |  |  -29  -14  -78 |  |  -29  -14  -78 |
+  |    5   -8   -1 |  |    0    0   -2 |  |   12   36  -16 |  |   12   36  -16 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 3
+
+===============================================================================================
+TESTCASE 3: Continuous-stream random
+ATTRIBUTE   : Verifies bubble-free ready/valid streaming across matrix boundaries.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    6   -2    4 |  |    4   -2   -3 |  |   56  -26  -56 |  |   56  -26  -56 |
+  |   -4    1   -7 |  |   -6   -5    5 |  |  -57   45   66 |  |  -57   45   66 |
+  |   -8    0    0 |  |    5   -6   -7 |  |  -32   16   24 |  |  -32   16   24 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 4
+
+===============================================================================================
+TESTCASE 4: Continuous-stream random
+ATTRIBUTE   : Verifies bubble-free ready/valid streaming across matrix boundaries.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -1   -2    3 |  |   -7   -1   -1 |  |  -15  -19    8 |  |  -15  -19    8 |
+  |   -8   -8    2 |  |    2    7   -5 |  |   28  -52   46 |  |   28  -52   46 |
+  |    6   -3    1 |  |   -6   -2   -1 |  |  -54  -29    8 |  |  -54  -29    8 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 5
+
+===============================================================================================
+TESTCASE 5: Continuous-stream random
+ATTRIBUTE   : Verifies bubble-free ready/valid streaming across matrix boundaries.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -7   -6    5 |  |    7    6   -5 |  |  -62  -52   63 |  |  -62  -52   63 |
+  |    6    3    5 |  |   -2    0   -8 |  |   11   26  -74 |  |   11   26  -74 |
+  |   -5    7   -5 |  |   -5   -2   -4 |  |  -24  -20  -11 |  |  -24  -20  -11 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 6
+
+===============================================================================================
+TESTCASE 6: Maximum result: (-8)x(-8)
+ATTRIBUTE   : Verifies the largest 3-term signed result: 3*(-8)*(-8) = +192.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -8   -8   -8 |  |   -8   -8   -8 |  |  192  192  192 |  |  192  192  192 |
+  |   -8   -8   -8 |  |   -8   -8   -8 |  |  192  192  192 |  |  192  192  192 |
+  |   -8   -8   -8 |  |   -8   -8   -8 |  |  192  192  192 |  |  192  192  192 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 7
+
+===============================================================================================
+TESTCASE 7: Minimum result: (-8)x(+7)
+ATTRIBUTE   : Verifies the smallest 3-term signed result: 3*(-8)*(+7) = -168.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -8   -8   -8 |  |    7    7    7 |  | -168 -168 -168 |  | -168 -168 -168 |
+  |   -8   -8   -8 |  |    7    7    7 |  | -168 -168 -168 |  | -168 -168 -168 |
+  |   -8   -8   -8 |  |    7    7    7 |  | -168 -168 -168 |  | -168 -168 -168 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 8
+
+===============================================================================================
+TESTCASE 8: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    7    7    5 |  |    6   -2    2 |  |   34  -32    8 |  |   34  -32    8 |
+  |   -6   -8   -6 |  |   -4    1   -3 |  |  -28   34   -6 |  |  -28   34   -6 |
+  |    3   -7    5 |  |    4   -5    3 |  |   66  -38   42 |  |   66  -38   42 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 9
+
+===============================================================================================
+TESTCASE 9: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -7    7    3 |  |   -8    2   -4 |  |   43  -41  -19 |  |   43  -41  -19 |
+  |    6    4   -1 |  |   -4   -3   -8 |  |  -69    2  -59 |  |  -69    2  -59 |
+  |   -6    4    2 |  |    5   -2    3 |  |   42  -28   -2 |  |   42  -28   -2 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 10
+
+===============================================================================================
+TESTCASE 10: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    6   -8   -5 |  |   -4   -5   -5 |  |   -7  -51  -46 |  |   -7  -51  -46 |
+  |   -2    7   -4 |  |    1    7    2 |  |   35   87   24 |  |   35   87   24 |
+  |    2    4    2 |  |   -5   -7    0 |  |  -14    4   -2 |  |  -14    4   -2 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 11
+
+===============================================================================================
+TESTCASE 11: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -4   -5   -3 |  |    4    0   -3 |  |   37   35   11 |  |   37   35   11 |
+  |    0    1   -7 |  |   -7   -4   -1 |  |   35   31  -15 |  |   35   31  -15 |
+  |   -7   -8    6 |  |   -6   -5    2 |  |   -8    2   41 |  |   -8    2   41 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 12
+
+===============================================================================================
+TESTCASE 12: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -6   -4   -6 |  |   -1    2    2 |  |   20  -36  -38 |  |   20  -36  -38 |
+  |    4    1    7 |  |    4    0   -4 |  |  -35   36   53 |  |  -35   36   53 |
+  |    2    0   -4 |  |   -5    4    7 |  |   18  -12  -24 |  |   18  -12  -24 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 13
+
+===============================================================================================
+TESTCASE 13: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    0    3    2 |  |   -2    0   -1 |  |   -4   -1   10 |  |   -4   -1   10 |
+  |   -8   -3    3 |  |    2   -5    0 |  |   -5   36   23 |  |   -5   36   23 |
+  |   -6    2    6 |  |   -5    7    5 |  |  -14   32   36 |  |  -14   32   36 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 14
+
+===============================================================================================
+TESTCASE 14: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    7    0    7 |  |    0   -6    6 |  |  -56  -63   84 |  |  -56  -63   84 |
+  |   -1    6   -7 |  |   -1    0   -2 |  |   50   27  -60 |  |   50   27  -60 |
+  |    6   -3   -8 |  |   -8   -3    6 |  |   67  -12   -6 |  |   67  -12   -6 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 15
+
+===============================================================================================
+TESTCASE 15: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -5   -2   -4 |  |   -1   -8    7 |  |    3   76   -7 |  |    3   76   -7 |
+  |   -2    6   -1 |  |    7   -4    2 |  |   47   -1    6 |  |   47   -1    6 |
+  |    3   -7   -7 |  |   -3   -7   -8 |  |  -31   53   63 |  |  -31   53   63 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 16
+
+===============================================================================================
+TESTCASE 16: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -5    5    6 |  |   -3    4   -2 |  |   43  -45  -16 |  |   43  -45  -16 |
+  |   -4   -5    6 |  |    2    1    2 |  |   20  -51  -38 |  |   20  -51  -38 |
+  |    0    4    4 |  |    3   -5   -6 |  |   20  -16  -16 |  |   20  -16  -16 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 17
+
+===============================================================================================
+TESTCASE 17: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -3   -3    0 |  |    4    1    2 |  |   -3   18  -24 |  |   -3   18  -24 |
+  |   -4    6   -1 |  |   -3   -7    6 |  |  -29  -48   25 |  |  -29  -48   25 |
+  |   -5    4    4 |  |   -5    2    3 |  |  -52  -25   26 |  |  -52  -25   26 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 18
+
+===============================================================================================
+TESTCASE 18: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -8   -2    2 |  |    0   -4    2 |  |   24   42  -12 |  |   24   42  -12 |
+  |   -1    2    7 |  |   -6   -3    4 |  |   30   12   48 |  |   30   12   48 |
+  |    0   -1    4 |  |    6    2    6 |  |   30   11   20 |  |   30   11   20 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 19
+
+===============================================================================================
+TESTCASE 19: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    7   -4    6 |  |    4    6    0 |  |   34   56   -4 |  |   34   56   -4 |
+  |   -4    4    3 |  |   -3   -8   -5 |  |  -31  -65  -32 |  |  -31  -65  -32 |
+  |   -7   -8   -8 |  |   -1   -3   -4 |  |    4   46   72 |  |    4   46   72 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 20
+
+===============================================================================================
+TESTCASE 20: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -8   -5   -2 |  |    1    1    3 |  |  -53   32  -43 |  |  -53   32  -43 |
+  |   -3    4   -8 |  |    7   -8    3 |  |  -15  -35  -13 |  |  -15  -35  -13 |
+  |   -4   -6   -3 |  |    5    0    2 |  |  -61   44  -36 |  |  -61   44  -36 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 21
+
+===============================================================================================
+TESTCASE 21: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    3    7   -6 |  |   -7   -3    4 |  |   -6   75  -44 |  |   -6   75  -44 |
+  |   -1   -2   -5 |  |   -3    6   -8 |  |   43   26   12 |  |   43   26   12 |
+  |   -5    5    1 |  |   -6   -7    0 |  |   14   38  -60 |  |   14   38  -60 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 22
+
+===============================================================================================
+TESTCASE 22: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    1   -5    5 |  |   -4    6   -4 |  |  -19   26    6 |  |  -19   26    6 |
+  |    7   -8   -4 |  |    6    2   -3 |  |  -88    2    0 |  |  -88    2    0 |
+  |   -2    3    5 |  |    3    6   -1 |  |   41   24   -6 |  |   41   24   -6 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 23
+
+===============================================================================================
+TESTCASE 23: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    3    3   -7 |  |    3    6   -8 |  |   53   15  -37 |  |   53   15  -37 |
+  |    5   -4    2 |  |   -4   -8    5 |  |   15   56  -52 |  |   15   56  -52 |
+  |    1    2    0 |  |   -8   -3    4 |  |   -5  -10    2 |  |   -5  -10    2 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 24
+
+===============================================================================================
+TESTCASE 24: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    2   -4   -2 |  |    1    4   -3 |  |    2  -14    0 |  |    2  -14    0 |
+  |   -7   -2    5 |  |    1    5   -3 |  |  -19  -33   42 |  |  -19  -33   42 |
+  |    2   -2    4 |  |   -2    1    3 |  |   -8    2   12 |  |   -8    2   12 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 25
+
+===============================================================================================
+TESTCASE 25: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -2    2    7 |  |    6   -4    6 |  |    5   38  -39 |  |    5   38  -39 |
+  |   -1   -4    1 |  |    5    1    4 |  |  -25    4  -27 |  |  -25    4  -27 |
+  |    7   -7    2 |  |    1    4   -5 |  |    9  -27    4 |  |    9  -27    4 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 26
+
+===============================================================================================
+TESTCASE 26: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -8   -4   -2 |  |   -6    1   -2 |  |   16   26  -16 |  |   16   26  -16 |
+  |   -4   -8    7 |  |    6   -8    6 |  |    4   53  -12 |  |    4   53  -12 |
+  |    7   -4   -4 |  |    4   -1    4 |  |  -82   43  -54 |  |  -82   43  -54 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 27
+
+===============================================================================================
+TESTCASE 27: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    6   -8    3 |  |    3    2    4 |  |   80   13   61 |  |   80   13   61 |
+  |    6   -8   -5 |  |   -7   -2   -5 |  |   64   53   69 |  |   64   53   69 |
+  |    3    4    0 |  |    2   -5   -1 |  |  -19   -2   -8 |  |  -19   -2   -8 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 28
+
+===============================================================================================
+TESTCASE 28: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    6    1   -2 |  |    3   -6    2 |  |   38  -45    2 |  |   38  -45    2 |
+  |   -7    5   -2 |  |    4   -5    4 |  |   15   13   -8 |  |   15   13   -8 |
+  |   -3   -8    3 |  |   -8    2    7 |  |  -65   64  -17 |  |  -65   64  -17 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 29
+
+===============================================================================================
+TESTCASE 29: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    6   -1    2 |  |    0   -1    2 |  |    3  -25   18 |  |    3  -25   18 |
+  |    6    2   -8 |  |   -7    5    4 |  |    2   60  -20 |  |    2   60  -20 |
+  |    7   -3    3 |  |   -2   -7    5 |  |   15  -43   17 |  |   15  -43   17 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 30
+
+===============================================================================================
+TESTCASE 30: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -3    3    3 |  |   -6   -5    6 |  |    6   12  -12 |  |    6   12  -12 |
+  |    0    0   -5 |  |    0    4    3 |  |   20   25    5 |  |   20   25    5 |
+  |   -6    4    0 |  |   -4   -5   -1 |  |   36   46  -24 |  |   36   46  -24 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 31
+
+===============================================================================================
+TESTCASE 31: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -2   -5    5 |  |   -6    2   -5 |  |  -48    6   65 |  |  -48    6   65 |
+  |    2    6    6 |  |    4   -3   -5 |  |  -36  -20   -4 |  |  -36  -20   -4 |
+  |   -7   -1    6 |  |   -8   -1    6 |  |  -10  -17   76 |  |  -10  -17   76 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 32
+
+===============================================================================================
+TESTCASE 32: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -6   -2   -2 |  |   -1   -6    4 |  |   18   28  -18 |  |   18   28  -18 |
+  |    0    3    2 |  |   -8   -2    1 |  |  -20    6   -5 |  |  -20    6   -5 |
+  |    3   -6    1 |  |    2    6   -4 |  |   47    0    2 |  |   47    0    2 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 33
+
+===============================================================================================
+TESTCASE 33: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -8   -1   -6 |  |    4    2    0 |  |  -52  -19  -28 |  |  -52  -19  -28 |
+  |   -2    4    4 |  |    2   -3   -2 |  |   12  -12   12 |  |   12  -12   12 |
+  |   -3    1    0 |  |    3    1    5 |  |  -10   -9   -2 |  |  -10   -9   -2 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 34
+
+===============================================================================================
+TESTCASE 34: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    0   -8   -1 |  |   -2    1   -7 |  |    1    9  -54 |  |    1    9  -54 |
+  |    6    7    0 |  |   -1   -1    6 |  |  -19   -1    0 |  |  -19   -1    0 |
+  |   -8    6    6 |  |    7   -1    6 |  |   52  -20  128 |  |   52  -20  128 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 35
+
+===============================================================================================
+TESTCASE 35: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    5   -3   -3 |  |   -2   -5    3 |  |  -16  -34   24 |  |  -16  -34   24 |
+  |    2    1   -2 |  |    2   -1   -2 |  |   -2  -19    6 |  |   -2  -19    6 |
+  |    3    1   -1 |  |    0    4   -1 |  |   -4  -20    8 |  |   -4  -20    8 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 36
+
+===============================================================================================
+TESTCASE 36: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    3   -1    7 |  |    2    4   -2 |  |   19   17    2 |  |   19   17    2 |
+  |    3    1   -2 |  |   -6    2   -8 |  |   -2   12  -14 |  |   -2   12  -14 |
+  |    0    2    3 |  |    1    1    0 |  |   -9    7  -16 |  |   -9    7  -16 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 37
+
+===============================================================================================
+TESTCASE 37: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -7    1    5 |  |    3   -5    4 |  |    2   -9   -7 |  |    2   -9   -7 |
+  |   -5    7   -6 |  |   -2   -4   -4 |  |  -59   45  -78 |  |  -59   45  -78 |
+  |    0   -5    2 |  |    5   -8    5 |  |   20    4   30 |  |   20    4   30 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 38
+
+===============================================================================================
+TESTCASE 38: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    4   -6   -6 |  |    2   -1   -4 |  |   -4   38  -16 |  |   -4   38  -16 |
+  |    4   -1   -2 |  |   -1   -1   -7 |  |    3    9  -23 |  |    3    9  -23 |
+  |   -5   -8    2 |  |    3   -6    7 |  |    4    1   90 |  |    4    1   90 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 39
+
+===============================================================================================
+TESTCASE 39: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    4   -6   -8 |  |   -3   -4   -4 |  |   44  -22  -70 |  |   44  -22  -70 |
+  |    3   -7   -8 |  |   -4   -3    1 |  |   51  -15  -67 |  |   51  -15  -67 |
+  |   -7   -3   -7 |  |   -4    3    6 |  |   61   16  -17 |  |   61   16  -17 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 40
+
+===============================================================================================
+TESTCASE 40: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    4    2    6 |  |    3    2   -5 |  |   24   20  -42 |  |   24   20  -42 |
+  |   -8   -2   -4 |  |   -6   -6    4 |  |  -28  -20   52 |  |  -28  -20   52 |
+  |    5   -1   -2 |  |    4    4   -5 |  |   13    8  -19 |  |   13    8  -19 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 41
+
+===============================================================================================
+TESTCASE 41: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -8    0   -8 |  |    4    7   -2 |  |    8  -88   -8 |  |    8  -88   -8 |
+  |    3    2   -8 |  |    0    3   -6 |  |   52   -5  -42 |  |   52   -5  -42 |
+  |    1   -5   -2 |  |   -5    4    3 |  |   14  -16   22 |  |   14  -16   22 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 42
+
+===============================================================================================
+TESTCASE 42: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -2   -2    3 |  |   -1   -7   -4 |  |  -26   32   -2 |  |  -26   32   -2 |
+  |   -4   -5   -5 |  |    2   -6   -1 |  |   34   48   41 |  |   34   48   41 |
+  |    6    1    2 |  |   -8    2   -4 |  |  -20  -44  -33 |  |  -20  -44  -33 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 43
+
+===============================================================================================
+TESTCASE 43: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    1    4   -5 |  |   -7    2    7 |  |   -3   44  -38 |  |   -3   44  -38 |
+  |   -2    0   -2 |  |   -4    3   -5 |  |   22    8  -24 |  |   22    8  -24 |
+  |   -6    7   -1 |  |   -4   -6    5 |  |   18   15  -82 |  |   18   15  -82 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 44
+
+===============================================================================================
+TESTCASE 44: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    5    1    3 |  |   -7   -4    1 |  |  -28  -24  -12 |  |  -28  -24  -12 |
+  |    1   -6    4 |  |   -8    2   -2 |  |   61  -24   -7 |  |   61  -24   -7 |
+  |    3    6   -8 |  |    5   -2   -5 |  | -109   16   31 |  | -109   16   31 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 45
+
+===============================================================================================
+TESTCASE 45: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -4    0   -7 |  |   -5    2   -8 |  |  -15   34   67 |  |  -15   34   67 |
+  |   -3    4   -8 |  |    5   -2   -3 |  |   -5   34   52 |  |   -5   34   52 |
+  |    6    3    3 |  |    5   -6   -5 |  |    0  -12  -72 |  |    0  -12  -72 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 46
+
+===============================================================================================
+TESTCASE 46: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -8    0    4 |  |   -6   -5    4 |  |   36    8   -8 |  |   36    8   -8 |
+  |    6   -2    7 |  |   -4    6    2 |  |  -49  -98   62 |  |  -49  -98   62 |
+  |   -6   -1    4 |  |   -3   -8    6 |  |   28   -8   -2 |  |   28   -8   -2 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 47
+
+===============================================================================================
+TESTCASE 47: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -5    4    7 |  |   -2   -6   -8 |  |  -10   67   -7 |  |  -10   67   -7 |
+  |    0    6   -4 |  |    2    4   -3 |  |   28   12    2 |  |   28   12    2 |
+  |   -4   -1    1 |  |   -4    3   -5 |  |    2   23   30 |  |    2   23   30 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 48
+
+===============================================================================================
+TESTCASE 48: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    0   -8    0 |  |   -3    0   -7 |  |   -8  -24  -56 |  |   -8  -24  -56 |
+  |   -5    6    1 |  |    1    3    7 |  |   17   21   70 |  |   17   21   70 |
+  |   -4   -8    0 |  |   -4    3   -7 |  |    4  -24  -28 |  |    4  -24  -28 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 49
+
+===============================================================================================
+TESTCASE 49: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -6    5   -1 |  |   -4    2    5 |  |  -17   -4  -31 |  |  -17   -4  -31 |
+  |   -5    2   -5 |  |   -7    0    1 |  |  -24   30  -53 |  |  -24   30  -53 |
+  |    6   -5    7 |  |    6   -8    6 |  |   53  -44   67 |  |   53  -44   67 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 50
+
+===============================================================================================
+TESTCASE 50: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -7   -3    5 |  |   -3    4    4 |  |   17  -19  -11 |  |   17  -19  -11 |
+  |   -5    1    3 |  |   -2   -8    6 |  |    7  -37    7 |  |    7  -37    7 |
+  |   -4    4    6 |  |   -2   -3    7 |  |   -8  -66   50 |  |   -8  -66   50 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 51
+
+===============================================================================================
+TESTCASE 51: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    3    5   -1 |  |    2    7   -5 |  |   24   44  -27 |  |   24   44  -27 |
+  |   -1   -3   -7 |  |    2    4   -4 |  |   48    2   73 |  |   48    2   73 |
+  |    0   -2   -3 |  |   -8   -3   -8 |  |   20    1   32 |  |   20    1   32 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 52
+
+===============================================================================================
+TESTCASE 52: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -6    0   -6 |  |   -3   -8   -3 |  |   36   90  -18 |  |   36   90  -18 |
+  |    0   -6   -3 |  |    4    1    5 |  |  -15   15  -48 |  |  -15   15  -48 |
+  |   -2   -7   -2 |  |   -3   -7    6 |  |  -16   23  -41 |  |  -16   23  -41 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 53
+
+===============================================================================================
+TESTCASE 53: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -2    4    6 |  |   -3    7    2 |  |  -20   18   46 |  |  -20   18   46 |
+  |   -2   -1   -5 |  |    4    2    5 |  |   37  -36  -34 |  |   37  -36  -34 |
+  |    4   -7   -5 |  |   -7    4    5 |  |   -5   -6  -52 |  |   -5   -6  -52 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 54
+
+===============================================================================================
+TESTCASE 54: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -7   -2    4 |  |    0    3   -6 |  |  -26  -57   30 |  |  -26  -57   30 |
+  |   -8   -6    0 |  |   -3    6   -2 |  |   18  -60   60 |  |   18  -60   60 |
+  |    0   -5   -1 |  |   -8   -6   -4 |  |   23  -24   14 |  |   23  -24   14 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 55
+
+===============================================================================================
+TESTCASE 55: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -8    4   -6 |  |   -1    4    3 |  |  -20   14  -72 |  |  -20   14  -72 |
+  |    0    3    6 |  |    2    4   -3 |  |   42  -18   27 |  |   42  -18   27 |
+  |   -8   -1   -5 |  |    6   -5    6 |  |  -24  -11  -51 |  |  -24  -11  -51 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 56
+
+===============================================================================================
+TESTCASE 56: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -8   -4   -2 |  |    3    7    7 |  |  -38  -24  -16 |  |  -38  -24  -16 |
+  |   -3   -6   -3 |  |    6   -6   -8 |  |  -30   27   39 |  |  -30   27   39 |
+  |    1   -2    5 |  |   -5   -4   -4 |  |  -34   -1    3 |  |  -34   -1    3 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 57
+
+===============================================================================================
+TESTCASE 57: Random matrix
+ATTRIBUTE   : Verifies general signed matrix multiplication with randomized 4-bit data.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    4    7    2 |  |    6    3   -4 |  |   59   62   31 |  |   59   62   31 |
+  |   -1    2   -6 |  |    7    6    5 |  |   50  -15  -22 |  |   50  -15  -22 |
+  |    2   -4   -1 |  |   -7    4    6 |  |   -9  -22  -34 |  |   -9  -22  -34 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 58
+
+===============================================================================================
+TESTCASE 58: All 4'hf bit pattern (signed -1)
+ATTRIBUTE   : Verifies the 4'hf bit pattern is interpreted as signed -1, not unsigned 15.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -1   -1   -1 |  |   -1   -1   -1 |  |    3    3    3 |  |    3    3    3 |
+  |   -1   -1   -1 |  |   -1   -1   -1 |  |    3    3    3 |  |    3    3    3 |
+  |   -1   -1   -1 |  |   -1   -1   -1 |  |    3    3    3 |  |    3    3    3 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 59
+
+===============================================================================================
+TESTCASE 59: All-zero matrices
+ATTRIBUTE   : Verifies 0 x 0 produces an entirely zero output matrix.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    0    0    0 |  |    0    0    0 |  |    0    0    0 |  |    0    0    0 |
+  |    0    0    0 |  |    0    0    0 |  |    0    0    0 |  |    0    0    0 |
+  |    0    0    0 |  |    0    0    0 |  |    0    0    0 |  |    0    0    0 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 60
+
+===============================================================================================
+TESTCASE 60: Identity property: A x I = A
+ATTRIBUTE   : Verifies the identity property: A x I must reproduce A exactly.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -7    1   -1 |  |    1    0    0 |  |   -7    1   -1 |  |   -7    1   -1 |
+  |    5    5   -2 |  |    0    1    0 |  |    5    5   -2 |  |    5    5   -2 |
+  |   -5   -1   -1 |  |    0    0    1 |  |   -5   -1   -1 |  |   -5   -1   -1 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 61
+
+===============================================================================================
+TESTCASE 61: All-ones matrices
+ATTRIBUTE   : Verifies accumulation of three unit products; every C element must equal 3.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    1    1    1 |  |    1    1    1 |  |    3    3    3 |  |    3    3    3 |
+  |    1    1    1 |  |    1    1    1 |  |    3    3    3 |  |    3    3    3 |
+  |    1    1    1 |  |    1    1    1 |  |    3    3    3 |  |    3    3    3 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 62
+
+===============================================================================================
+TESTCASE 62: Signed maximum matrices (+7)
+ATTRIBUTE   : Verifies all maximum signed inputs (+7); every C element must equal 147.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    7    7    7 |  |    7    7    7 |  |  147  147  147 |  |  147  147  147 |
+  |    7    7    7 |  |    7    7    7 |  |  147  147  147 |  |  147  147  147 |
+  |    7    7    7 |  |    7    7    7 |  |  147  147  147 |  |  147  147  147 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 63
+
+===============================================================================================
+TESTCASE 63: Signed minimum matrices (-8)
+ATTRIBUTE   : Verifies all minimum signed inputs (-8); every C element must equal 192.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -8   -8   -8 |  |   -8   -8   -8 |  |  192  192  192 |  |  192  192  192 |
+  |   -8   -8   -8 |  |   -8   -8   -8 |  |  192  192  192 |  |  192  192  192 |
+  |   -8   -8   -8 |  |   -8   -8   -8 |  |  192  192  192 |  |  192  192  192 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 64
+
+===============================================================================================
+TESTCASE 64: Zero property: A x 0 = 0
+ATTRIBUTE   : Verifies the zero property: an arbitrary A multiplied by zero must be zero.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -6    4    4 |  |    0    0    0 |  |    0    0    0 |  |    0    0    0 |
+  |   -8    0    3 |  |    0    0    0 |  |    0    0    0 |  |    0    0    0 |
+  |    7   -6   -8 |  |    0    0    0 |  |    0    0    0 |  |    0    0    0 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 65
+
+===============================================================================================
+TESTCASE 65: Non-commutativity: A x B
+ATTRIBUTE   : First half of the non-commutativity check; compare with the following B x A case.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    1    0    0 |  |    1    0    0 |  |    1    0    0 |  |    1    0    0 |
+  |    0    1    0 |  |    0    1    3 |  |    0    1    3 |  |    0    1    3 |
+  |    0    2    1 |  |    0    0    1 |  |    0    2    7 |  |    0    2    7 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 66
+
+===============================================================================================
+TESTCASE 66: Non-commutativity: B x A
+ATTRIBUTE   : Verifies matrix order matters: this B x A result must differ from A x B.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |    1    0    0 |  |    1    0    0 |  |    1    0    0 |  |    1    0    0 |
+  |    0    1    3 |  |    0    1    0 |  |    0    7    3 |  |    0    7    3 |
+  |    0    0    1 |  |    0    2    1 |  |    0    2    1 |  |    0    2    1 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 67
+
+===============================================================================================
+TESTCASE 67: Scalar linearity baseline: A x B
+ATTRIBUTE   : Establishes baseline C=A x B for the following scalar-linearity comparison.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -3    0    2 |  |    1   -2    2 |  |   -3   10   -4 |  |   -3   10   -4 |
+  |   -1    1    0 |  |    2    1   -1 |  |    1    3   -3 |  |    1    3   -3 |
+  |    3   -2    1 |  |    0    2    1 |  |   -1   -6    9 |  |   -1   -6    9 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+PASS matrix 68
+
+===============================================================================================
+TESTCASE 68: Scalar linearity: (2A) x B
+ATTRIBUTE   : Verifies scalar linearity: (2A) x B must equal 2 times the baseline C.
+-----------------------------------------------------------------------------------------------
+       Matrix A             Matrix B             Golden C=A*B          RTL C
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+  |   -6    0    4 |  |    1   -2    2 |  |   -6   20   -8 |  |   -6   20   -8 |
+  |   -2    2    0 |  |    2    1   -1 |  |    2    6   -6 |  |    2    6   -6 |
+  |    6   -4    2 |  |    0    2    1 |  |   -2  -12   18 |  |   -2  -12   18 |
+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
+RESULT      : PASS -- RTL output matches the golden matrix.
+===============================================================================================
+
+
+========== CONTINUOUS STREAM SUMMARY ==========
+  Matrices accepted : 69
+  Matrices launched : 69
+  Matrices completed: 69
+  Lane-0 samples    : 207
+  Launch interval   : 3 clocks
+  Output interval   : 3 clocks
+  Matrix passes     : 69
+  Matrix failures   : 0
+  Property passes   : 4
+  Property failures : 0
+  Total passes      : 73
+  Total failures    : 0
+  Raw error events  : 0
+===============================================
+
+
+================ FUNCTIONALITY BY CATEGORY ================
+                            Category   Total  Passed  Failed
+  ---------------------------------------------------------
+          Directed signed arithmetic       2       2       0
+                     Random matrices      54      54       0
+               Maximum result corner       1       1       0
+               Minimum result corner       1       1       0
+                    All 4'hf pattern       1       1       0
+                   All-zero matrices       1       1       0
+                     Identity matrix       1       1       0
+                    All-one matrices       1       1       0
+                 Signed maximum (+7)       1       1       0
+                 Signed minimum (-8)       1       1       0
+              Zero property matrices       1       1       0
+          Non-commutativity matrices       2       2       0
+           Scalar-linearity matrices       2       2       0
+
+================== ALGEBRAIC PROPERTIES ===================
+                                  Property Total  Passed  Failed
+  ---------------------------------------------------------
+                       Identity: A x I = A     1       1       0
+                           Zero: A x 0 = 0     1       1       0
+         Non-Commutativity: A x B != B x A     1       1       0
+             Scalar Linearity: (2A)xB = 2C     1       1       0
+===========================================================
+
+ALL 69 MATRICES PASSED WITH NO STREAMING GAP
+
+$finish called at time : 2196 ns : File "C:/Users/User/Desktop/UCSD/interview/TetraMem/source/rtl/tb.sv" Line 855
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 26 02:54:20 2026...
