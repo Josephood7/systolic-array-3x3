@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="2,195,996 ps"></ZoomStartTime>
-      <ZoomEndTime time="2,196,001 ps"></ZoomEndTime>
-      <Cursor1Time time="2,196,000 ps"></Cursor1Time>
+      <ZoomStartTime time="24.859 ns"></ZoomStartTime>
+      <ZoomEndTime time="214.833 ns"></ZoomEndTime>
+      <Cursor1Time time="135.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="173"></NameColumnWidth>
-      <ValueColumnWidth column_width="156"></ValueColumnWidth>
+      <ValueColumnWidth column_width="146"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="127" />
+   <WVObjectSize size="146" />
    <wvobject fp_name="/tb_systolic_top/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -352,13 +352,57 @@
       <obj_property name="ElementShortName">b_in[2:0][2:0][3:0]</obj_property>
       <obj_property name="ObjectShortName">b_in[2:0][2:0][3:0]</obj_property>
    </wvobject>
+   <wvobject fp_name="/tb_systolic_top/dut/arr_b_in" type="array">
+      <obj_property name="ElementShortName">arr_b_in[2:0][3:0]</obj_property>
+      <obj_property name="ObjectShortName">arr_b_in[2:0][3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_systolic_top/dut/arr_a_in" type="array">
+      <obj_property name="ElementShortName">arr_a_in[2:0][3:0]</obj_property>
+      <obj_property name="ObjectShortName">arr_a_in[2:0][3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_systolic_top/dut/arr_c_out" type="array">
+      <obj_property name="ElementShortName">arr_c_out[2:0][8:0]</obj_property>
+      <obj_property name="ObjectShortName">arr_c_out[2:0][8:0]</obj_property>
+   </wvobject>
    <wvobject fp_name="/tb_systolic_top/dut/out_valid" type="logic">
       <obj_property name="ElementShortName">out_valid</obj_property>
       <obj_property name="ObjectShortName">out_valid</obj_property>
    </wvobject>
+   <wvobject fp_name="/tb_systolic_top/dut/pe_array_inst/pe_out" type="array">
+      <obj_property name="ElementShortName">pe_out[2:0][2:0]</obj_property>
+      <obj_property name="ObjectShortName">pe_out[2:0][2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_systolic_top/dut/pe_array_inst/c_out" type="array">
+      <obj_property name="ElementShortName">c_out[2:0][8:0]</obj_property>
+      <obj_property name="ObjectShortName">c_out[2:0][8:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
    <wvobject fp_name="/tb_systolic_top/dut/c_out" type="array">
       <obj_property name="ElementShortName">c_out[2:0][2:0][8:0]</obj_property>
       <obj_property name="ObjectShortName">c_out[2:0][2:0][8:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_systolic_top/dut/c_buffer" type="array">
+      <obj_property name="ElementShortName">c_buffer[1:0][2:0][2:0][8:0]</obj_property>
+      <obj_property name="ObjectShortName">c_buffer[1:0][2:0][2:0][8:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_systolic_top/dut/c_buffer[1]" type="array">
+         <obj_property name="ElementShortName">[1][2:0][2:0][8:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][2:0][2:0][8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_systolic_top/dut/c_buffer[0]" type="array">
+         <obj_property name="ElementShortName">[0][2:0][2:0][8:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][2:0][2:0][8:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_systolic_top/dut/c_buffer[1]" type="array">
+         <obj_property name="ElementShortName">[1][2:0][2:0][8:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][2:0][2:0][8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_systolic_top/dut/c_buffer[0]" type="array">
+         <obj_property name="ElementShortName">[0][2:0][2:0][8:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][2:0][2:0][8:0]</obj_property>
+      </wvobject>
    </wvobject>
    <wvobject fp_name="/tb_systolic_top/dut/active_bank" type="logic">
       <obj_property name="ElementShortName">active_bank</obj_property>
@@ -379,10 +423,6 @@
    <wvobject fp_name="/tb_systolic_top/dut/b_buffer" type="array">
       <obj_property name="ElementShortName">b_buffer[1:0][2:0][2:0][3:0]</obj_property>
       <obj_property name="ObjectShortName">b_buffer[1:0][2:0][2:0][3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_systolic_top/dut/c_buffer" type="array">
-      <obj_property name="ElementShortName">c_buffer[1:0][2:0][2:0][8:0]</obj_property>
-      <obj_property name="ObjectShortName">c_buffer[1:0][2:0][2:0][8:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_systolic_top/dut/matrix_counter" type="array">
       <obj_property name="ElementShortName">matrix_counter[1:0]</obj_property>
@@ -448,13 +488,9 @@
       <obj_property name="ElementShortName">done_bank_pipe[10:0]</obj_property>
       <obj_property name="ObjectShortName">done_bank_pipe[10:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_systolic_top/dut/arr_a_in" type="array">
-      <obj_property name="ElementShortName">arr_a_in[2:0][3:0]</obj_property>
-      <obj_property name="ObjectShortName">arr_a_in[2:0][3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_systolic_top/dut/arr_b_in" type="array">
-      <obj_property name="ElementShortName">arr_b_in[2:0][3:0]</obj_property>
-      <obj_property name="ObjectShortName">arr_b_in[2:0][3:0]</obj_property>
+   <wvobject fp_name="/tb_systolic_top/dut/arr_c_row" type="array">
+      <obj_property name="ElementShortName">arr_c_row[2:0][1:0]</obj_property>
+      <obj_property name="ObjectShortName">arr_c_row[2:0][1:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_systolic_top/dut/arr_a_valid" type="array">
       <obj_property name="ElementShortName">arr_a_valid[2:0]</obj_property>
@@ -475,14 +511,6 @@
    <wvobject fp_name="/tb_systolic_top/dut/arr_c_bank" type="array">
       <obj_property name="ElementShortName">arr_c_bank[2:0]</obj_property>
       <obj_property name="ObjectShortName">arr_c_bank[2:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_systolic_top/dut/arr_c_row" type="array">
-      <obj_property name="ElementShortName">arr_c_row[2:0][1:0]</obj_property>
-      <obj_property name="ObjectShortName">arr_c_row[2:0][1:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_systolic_top/dut/arr_c_out" type="array">
-      <obj_property name="ElementShortName">arr_c_out[2:0][8:0]</obj_property>
-      <obj_property name="ObjectShortName">arr_c_out[2:0][8:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_systolic_top/dut/wgt_load_en" type="array">
       <obj_property name="ElementShortName">wgt_load_en[2:0]</obj_property>
@@ -527,5 +555,73 @@
    <wvobject fp_name="/tb_systolic_top/dut/DONE_DELAY" type="array">
       <obj_property name="ElementShortName">DONE_DELAY[31:0]</obj_property>
       <obj_property name="ObjectShortName">DONE_DELAY[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_systolic_top/dut/pe_array_inst/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_systolic_top/dut/pe_array_inst/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_systolic_top/dut/pe_array_inst/wgt_load_en" type="array">
+      <obj_property name="ElementShortName">wgt_load_en[2:0]</obj_property>
+      <obj_property name="ObjectShortName">wgt_load_en[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_systolic_top/dut/pe_array_inst/wgt_load_bank" type="logic">
+      <obj_property name="ElementShortName">wgt_load_bank</obj_property>
+      <obj_property name="ObjectShortName">wgt_load_bank</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_systolic_top/dut/pe_array_inst/a_valid" type="array">
+      <obj_property name="ElementShortName">a_valid[2:0]</obj_property>
+      <obj_property name="ObjectShortName">a_valid[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_systolic_top/dut/pe_array_inst/a_bank" type="array">
+      <obj_property name="ElementShortName">a_bank[2:0]</obj_property>
+      <obj_property name="ObjectShortName">a_bank[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_systolic_top/dut/pe_array_inst/a_row" type="array">
+      <obj_property name="ElementShortName">a_row[2:0][1:0]</obj_property>
+      <obj_property name="ObjectShortName">a_row[2:0][1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_systolic_top/dut/pe_array_inst/a_in" type="array">
+      <obj_property name="ElementShortName">a_in[2:0][3:0]</obj_property>
+      <obj_property name="ObjectShortName">a_in[2:0][3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_systolic_top/dut/pe_array_inst/b_in" type="array">
+      <obj_property name="ElementShortName">b_in[2:0][3:0]</obj_property>
+      <obj_property name="ObjectShortName">b_in[2:0][3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_systolic_top/dut/pe_array_inst/c_valid" type="array">
+      <obj_property name="ElementShortName">c_valid[2:0]</obj_property>
+      <obj_property name="ObjectShortName">c_valid[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_systolic_top/dut/pe_array_inst/c_bank" type="array">
+      <obj_property name="ElementShortName">c_bank[2:0]</obj_property>
+      <obj_property name="ObjectShortName">c_bank[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_systolic_top/dut/pe_array_inst/c_row" type="array">
+      <obj_property name="ElementShortName">c_row[2:0][1:0]</obj_property>
+      <obj_property name="ObjectShortName">c_row[2:0][1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_systolic_top/dut/pe_array_inst/pe_in" type="array">
+      <obj_property name="ElementShortName">pe_in[2:0][2:0]</obj_property>
+      <obj_property name="ObjectShortName">pe_in[2:0][2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_systolic_top/dut/pe_array_inst/DATA_WIDTH" type="array">
+      <obj_property name="ElementShortName">DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_systolic_top/dut/pe_array_inst/PSUM_WIDTH" type="array">
+      <obj_property name="ElementShortName">PSUM_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PSUM_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_systolic_top/dut/pe_array_inst/NUM_PE" type="array">
+      <obj_property name="ElementShortName">NUM_PE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NUM_PE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_systolic_top/dut/pe_array_inst/ROW_WIDTH" type="array">
+      <obj_property name="ElementShortName">ROW_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ROW_WIDTH[31:0]</obj_property>
    </wvobject>
 </wave_config>
