@@ -20,7 +20,7 @@ module systolic_top #(
     localparam int A_PIPE_DEPTH = 3*NUM_PE-1;
     localparam int W_PIPE_DEPTH = 2*NUM_PE-1;
     localparam int DONE_DEPTH   = 4*NUM_PE-1;
-    localparam int DONE_DELAY   = 4*NUM_PE-2;
+    localparam int DONE_DELAY   = 4*NUM_PE-3;
 
     // The active_bank is the write pointer, read_bank flips for every launched
     // Local buffers are double-buffered to allow a new matrix to be queued while the previous one is still running.  
@@ -110,38 +110,28 @@ module systolic_top #(
             // Control & collect every valid result.
             for (int col = 0; col < NUM_PE; col++) begin
                 if (arr_c_valid[col]) begin
-                    c_buffer[arr_c_bank[col]][arr_c_row[col]][col] <= arr_c_out[col];
+                c_buffer[arr_c_bank[col]][arr_c_row[col]][col] <= arr_c_out[col];
                 end
             end
         end
     end
 
-    // Publish the entire C matrix from the C buffer to the output.
-    always_ff @(posedge clk or negedge rst_n) begin
-        if (!rst_n) begin
-            c_out <= '{default:'0};
-        end else if (done_valid_pipe[0]) begin
-            for (int row = 0; row < NUM_PE; row++) begin
-                for (int col = 0; col < NUM_PE; col++) begin
-                    if (arr_c_valid[col] && 
-                       (arr_c_bank[col] == done_bank_pipe[0]) && 
-                       (arr_c_row[col] == row)) begin
-                        c_out[row][col] <= arr_c_out[col]; // bypassing the final result value
-                    end else begin
-                        c_out[row][col] <= c_buffer[done_bank_pipe[0]][row][col];
-                    end
+    // Expose the completion pulse without another output register.  Buffered
+    // cells form the matrix, while any matching live array result bypasses
+    // c_buffer during this same valid cycle.
+    always_comb begin
+        out_valid = done_valid_pipe[0];
+
+        for (int row = 0; row < NUM_PE; row++) begin
+            for (int col = 0; col < NUM_PE; col++) begin
+                if (arr_c_valid[col] &&
+                   (arr_c_bank[col] == done_bank_pipe[0]) &&
+                   (arr_c_row[col] == row)) begin
+                    c_out[row][col] = arr_c_out[col];
+                end else begin
+                    c_out[row][col] = c_buffer[done_bank_pipe[0]][row][col];
                 end
             end
-        end
-    end
-
-    always_ff @(posedge clk or negedge rst_n) begin
-        if (!rst_n) begin
-            out_valid <= 1'b0;
-        end else if (done_valid_pipe[0]) begin
-            out_valid <= 1'b1;
-        end else begin
-            out_valid <= 1'b0;
         end
     end
 

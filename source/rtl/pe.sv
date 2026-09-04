@@ -17,11 +17,13 @@ module pe #(
     input  logic signed [PSUM_WIDTH-1:0] psum_in,
 
     output logic                         act_valid_out,
+    output logic                         act_valid_out_frwd,
     output logic                         act_bank_out,
     output logic [ROW_WIDTH-1:0]         act_row_out,
     output logic signed [DATA_WIDTH-1:0] act_out,
     output logic signed [DATA_WIDTH-1:0] wgt_out,
-    output logic signed [PSUM_WIDTH-1:0] psum_out
+    output logic signed [PSUM_WIDTH-1:0] psum_out,
+    output logic signed [PSUM_WIDTH-1:0] psum_out_frwd
 );
 
     localparam int PRODUCT_WIDTH = 2 * DATA_WIDTH;
@@ -32,10 +34,12 @@ module pe #(
     logic signed [PSUM_WIDTH-1:0] product_extended;
     logic signed [PSUM_WIDTH-1:0] mac;
 
-    assign active_wgt      = act_bank_in ? wgt_buf1 : wgt_buf0;
-    assign product         = $signed(act_in) * $signed(active_wgt);
-    assign product_extended = product;
-    assign mac             = $signed(psum_in) + $signed(product_extended);
+    assign active_wgt         = act_bank_in ? wgt_buf1 : wgt_buf0;
+    assign product            = $signed(act_in) * $signed(active_wgt);
+    assign product_extended   = product;
+    assign mac                = $signed(psum_in) + $signed(product_extended);
+    assign psum_out_frwd      = (act_valid_in) ? mac : '0;
+    assign act_valid_out_frwd = act_valid_in;
 
     // Weight double-buffering logic.
     always_ff @(posedge clk or negedge rst_n) begin

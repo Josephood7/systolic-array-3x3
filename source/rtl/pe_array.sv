@@ -24,11 +24,13 @@ module pe_array #(
 
     typedef struct packed {
         logic                          valid;
+        logic                          valid_frwd;
         logic                          bank;
         logic [ROW_WIDTH-1:0]          row_id;
         logic signed [DATA_WIDTH-1:0]  act;
         logic signed [DATA_WIDTH-1:0]  wgt;
         logic signed [PSUM_WIDTH-1:0]  psum;
+        logic signed [PSUM_WIDTH-1:0]  psum_frwd;
     } pe_data_t;
 
     pe_data_t pe_in  [NUM_PE-1:0][NUM_PE-1:0];
@@ -59,20 +61,25 @@ module pe_array #(
                 .wgt_in       (pe_in[row][col].wgt),
                 .psum_in      (pe_in[row][col].psum),
                 .act_valid_out(pe_out[row][col].valid),
+                .act_valid_out_frwd(pe_out[row][col].valid_frwd),
                 .act_bank_out (pe_out[row][col].bank),
                 .act_row_out  (pe_out[row][col].row_id),
                 .act_out      (pe_out[row][col].act),
                 .wgt_out      (pe_out[row][col].wgt),
-                .psum_out     (pe_out[row][col].psum)
+                .psum_out     (pe_out[row][col].psum),
+                .psum_out_frwd(pe_out[row][col].psum_frwd)
             );
         end
     end
 
     for (genvar col = 0; col < NUM_PE; col++) begin : gen_output
-        assign c_valid[col] = pe_out[NUM_PE-1][col].valid;
-        assign c_bank[col]  = pe_out[NUM_PE-1][col].bank;
-        assign c_row[col]   = pe_out[NUM_PE-1][col].row_id;
-        assign c_out[col]   = pe_out[NUM_PE-1][col].psum;
+        // psum_frwd is the combinational MAC at the input of the final PE's
+        // output register.  Its metadata must come from that same PE input;
+        // pe_out.bank/row_id belong to the preceding registered sample.
+        assign c_valid[col] = pe_in[NUM_PE-1][col].valid;
+        assign c_bank[col]  = pe_in[NUM_PE-1][col].bank;
+        assign c_row[col]   = pe_in[NUM_PE-1][col].row_id;
+        assign c_out[col]   = pe_out[NUM_PE-1][col].psum_frwd;
     end
 
 endmodule
