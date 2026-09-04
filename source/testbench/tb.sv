@@ -5,7 +5,7 @@ module tb_systolic_top;
     localparam int PSUM_WIDTH       = 9;
     localparam int NUM_PE          = 3;
     localparam int CLK_PERIOD      = 10;
-    localparam int FIRST_LATENCY   = 4*NUM_PE-1;
+    localparam int FIRST_LATENCY   = 4*NUM_PE-3;
     localparam int MAX_TEST_CYCLES = 1000;
 
     localparam int DIRECTED_JOBS   = 2;
